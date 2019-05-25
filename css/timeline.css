@@ -1,0 +1,91 @@
+
+.timeline>ul>li{
+	color: #484848;
+}
+
+.acontent{
+	padding: 30px;
+	width: 1140px;
+	background: #FFF;
+	overflow: hidden;
+}
+.timeline{
+	padding-top: 10px;
+	float: left;
+	
+}
+.timeline p{
+	display: block;
+	line-height: 40px;
+	float: left;
+	display: block;
+	margin-right: 25px;
+}
+.timeline p,.timeline a{
+	font-size: 15px;
+	font-family: SHC-R;
+}
+.timeline a{
+	color: #333;
+	display: block;
+	float: left;
+	line-height: 40px;
+	overflow:hidden;
+    text-overflow:ellipsis;
+    display:-webkit-box;
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:1;
+    padding-left: 25px;  
+    border-left: 2px solid #E0DFDF;
+    z-index: 20;
+}
+.timeline p{
+	position: relative;
+	color: #C4A699;
+}
+.timeline p:after{
+	position: absolute;
+	content: '';
+	width:8px;
+	height: 8px;
+	border-radius: 50%;
+	border: 2px solid #CCCACA;
+	top: 13px;
+	background: #FFF;
+	right: -32px;
+	z-index: 9999;
+	transition:background .5s;
+}
+
+.timeline li{
+	height: 40px;
+	overflow: hidden;
+}
+
+.timeline li:hover a{
+	color: #000;
+}
+.timeline li:hover p:after{
+	background: #000;
+}
+.page{
+	width: 800px;
+	height: 80px;
+	margin: 0 auto;
+	padding-top: 60px;
+	text-align: center;
+}
+.page>a{
+	font-size: 14px;
+	padding: 10px;
+	margin: 0 7px;
+	background: #F7F7F7;
+	color: #666;
+}
+.page>a:hover{
+	color: #FFF;
+	background: #1C2327;
+}
+.page>a:first-child{
+	cursor: inherit;
+}
